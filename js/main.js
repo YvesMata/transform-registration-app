@@ -1,4 +1,4 @@
-console.log("Hello World!")
+//======================NAVBAR==================================
 
 const navBar = document.getElementById("nav-bar");
 const navBarButton = document.getElementById("nav-bar-button");
@@ -17,3 +17,8 @@ navBarButton.addEventListener('click', () => {
 		console.log(buttonStateMenu);
 	}
 });
+
+//======================FORM=================================
+
+
+
