@@ -136,11 +136,21 @@ a:hover {
 	color: white;
 }
 
+#nav-overlay {
+	background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+}
+
 /* HOME PAGE */
 
 #index-body {
 	height: 100vh;
-	background: url('../img/sumobot-bg.png') no-repeat center center/cover;
+	background: url('https://storage.googleapis.com/sumobot-406307.appspot.com/sumobot-bg.png') no-repeat center center/cover;
 }
 
 #website-page-area {
@@ -350,12 +360,55 @@ input[type=submit]:hover {
 	background-color: #e36002;
 }
 
+/* =======================================SUCCESS PAGE=========================================== */
+
+#success-page {
+	background: #f2f2f2;
+	height: 100vh;
+	justify-content: center;
+  	align-items: center;
+}
+
+#success-container {
+	flex-direction: column;
+	background: white;
+	color: green;
+	height: 30%;
+	width: 80%;
+	justify-content: center;
+ 	align-items: center;
+}
+
+#back-button {
+	background-color: #fd7e14;
+	color: white;
+	font-size: 17px;
+	font-weight: bold;
+	height: 40px;
+	width: 70px;
+	margin-top: 20px;
+	border: none;
+	border-radius: 5px;
+}
+
+.fa-circle-check {
+	margin-right: 5px;
+}
+
+#back-button:hover {
+	background-color: #e36002;
+}
+
 /* MEDIA QUERIES */
 
 @media (min-width: 576px) {
 	#nav-bar {
 		width: 20%;
 		transition: 0.5s;
+	}
+
+	#success-container {
+		width: 50%;
 	}
 }
 
